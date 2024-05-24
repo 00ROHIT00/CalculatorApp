@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin : 0;
     padding : none;
@@ -27,17 +29,20 @@
     border: 0;
     outline:  none;
     width: 60px;
-    height: 60px;
+    height: 70px;
     border-radius: 10px ;
     -webkit-border-radius: 10px ;
     -moz-border-radius: 10px ;
     -ms-border-radius: 10px ;
     -o-border-radius: 10px ;
-    box-shadow: 0px 0px 15px -7px white;
     background: transparent;
-    color: white;
     cursor: pointer;
     margin: 10px;
+}
+
+.buttons{
+    box-shadow: 0px 0px 16px -7px #7d93b1;
+    color:#7d93b1;
     transition: 0.3s ease ;
     -webkit-transition: 0.3s ease ;
     -moz-transition: 0.3s ease ;
@@ -45,10 +50,9 @@
     -o-transition: 0.3s ease ;
 }
 
-.calculator form input:hover{
-    box-shadow: 0px 0px 19px 0px white;
+.buttons:hover{
+    box-shadow: 0px 0px 18px 1px #7d93b1;
 }
-
 form .display{
     display : flex;
     justify-content: flex-end;
@@ -64,4 +68,37 @@ form .display input{
 
 form input.equal{
     width : 145px;
+}
+
+#answerBox{
+    color:#7d93b1;
+    box-shadow: 0px 0px 16px -7px #7d93b1;
+}
+
+.container h1{
+    position: absolute;
+    top : 5px;
+    left : 30px;
+    font-family: "Poppins", sans-serif;
+}
+.container h1:nth-child(2){
+    position: absolute;
+    top : 35px;
+    left : 30px;
+    font-family: "Poppins", sans-serif;
+    color : grey;
+}
+.container h1:nth-child(3){
+    position: absolute;
+    top : 65px;
+    left : 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container h1:nth-child(4){
+    position: absolute;
+    top : 95px;
+    left : 30px;
+    font-family: "Poppins", sans-serif;
+    color : grey;
 }
